@@ -197,17 +197,19 @@ Github Actionsの設定をいじくっているときに気づきました、時
 <p>中華フォントだったので日本語フォントに変更しました。これ→<a href=https://koruri.github.io>Koruri</a><br>
 <br>
 やり方は、font-familyが設定されているCSSを<strong>上書きする</strong>という力技です。<br>
-もっといいやり方があるんやろうな（遠い目）</p>
+もっといいやり方があるんやろうな（遠い目）
+</p>
 <ol>
-<li>CSSがどこで読み込まれているか探す。
+<li>
+<p>CSSがどこで読み込まれているか探す。</p>
 <ul>
 <li>layouts/partials/head.htmlにありました。こんな感じのがたくさん<br>
 <code>&lt;link rel="stylesheet" href='{{ "css/frameworks.min.css" | absURL }}' /></code><br>
-config.tomlから読み込んでいるテーマもあるそうです、そっちのほうが便利そう。</li>
+config.tomlから読み込んでいるテーマもあるそうです、そっちのほうが便利そう。<br>
+<br>
+</li>
 </ul>
 </li>
-</ol>
-<ol start=2>
 <li>
 <p>head.htmlに以下のように追記する。</p>
 <ul>
