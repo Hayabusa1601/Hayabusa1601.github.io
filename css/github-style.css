@@ -191,3 +191,5 @@ body {
 .pinned-item-desc img {
   max-width: 100%;
 }
+
+.chroma { color: #272822; background-color: #272822 }
