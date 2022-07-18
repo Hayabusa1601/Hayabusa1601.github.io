@@ -1,0 +1,7 @@
+.amazon-box img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2em 4em;
+}
