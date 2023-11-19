@@ -1,0 +1,77 @@
+<!doctype html><html class=no-js lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><title>GASの基本メモ - My New Hugo Site</title>
+<script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta property="og:title" content="GASの基本メモ"><meta property="og:description" content="参考文献 公式リファレンス Reference overview | Apps Script | Google Developers qiita GoogleAppsScriptのチートシート - Qiita 使い方 ここから「新規スクリプト」で新たに作成できる。 https://script.google.com 関数myfunctionがあらかじめ定義されているので、その中に記入していく。 基本的な動作 ログ"><meta property="og:type" content="article"><meta property="og:url" content="https://hayabusa1601.github.io/posts/jan10_gas_cheetsheet/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-01-10T01:39:53+09:00"><meta property="article:modified_time" content="2023-01-10T22:39:53+09:00"><meta itemprop=name content="GASの基本メモ"><meta itemprop=description content="参考文献 公式リファレンス Reference overview | Apps Script | Google Developers qiita GoogleAppsScriptのチートシート - Qiita 使い方 ここから「新規スクリプト」で新たに作成できる。 https://script.google.com 関数myfunctionがあらかじめ定義されているので、その中に記入していく。 基本的な動作 ログ"><meta itemprop=datePublished content="2023-01-10T01:39:53+09:00"><meta itemprop=dateModified content="2023-01-10T22:39:53+09:00"><meta itemprop=wordCount content="1823"><meta itemprop=keywords content="GAS,cheatsheet,"><meta name=twitter:card content="summary"><meta name=twitter:title content="GASの基本メモ"><meta name=twitter:description content="参考文献 公式リファレンス Reference overview | Apps Script | Google Developers qiita GoogleAppsScriptのチートシート - Qiita 使い方 ここから「新規スクリプト」で新たに作成できる。 https://script.google.com 関数myfunctionがあらかじめ定義されているので、その中に記入していく。 基本的な動作 ログ"><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/notosansjp.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title=ハblog rel=home><div class="logo__item logo__text"><div class=logo__title>ハblog</div><div class=logo__tagline>h4yroom</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>ホーム</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>記事</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>GASの基本メモ</h1><p class=post__lead>cheatsheet</p><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2023-01-10T01:39:53+09:00>2023-01-10</time>
+<time class=meta__text datetime=2023-01-10T22:39:53+09:00>(Last Modified: 2023-01-10)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/gas/ rel=category>GAS</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#参考文献>参考文献</a></li><li><a href=#使い方>使い方</a></li><li><a href=#基本的な動作>基本的な動作</a><ul><li><a href=#ログの出力>ログの出力</a></li><li><a href=#変数宣言>変数宣言</a></li><li><a href=#配列>配列</a></li><li><a href=#文字列の操作>文字列の操作</a></li></ul></li><li><a href=#スプレッドシートの操作>スプレッドシートの操作</a><ul><li><a href=#スプレッドシートを開く>スプレッドシートを開く</a></li><li><a href=#シートを開く>シートを開く</a></li><li><a href=#セルの値を取得する>セルの値を取得する</a></li><li><a href=#セルの値を設定変更する>セルの値を設定、変更する</a></li><li><a href=#ブランク判定>ブランク判定</a></li><li><a href=#最終行最終列を取得>最終行・最終列を取得</a></li><li><a href=#行の挿入>行の挿入</a></li><li><a href=#行の削除>行の削除</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><hr><h2 id=参考文献>参考文献</h2><p>公式リファレンス
+<a href="https://developers.google.com/apps-script/reference?hl=en">Reference overview  |  Apps Script  |  Google Developers</a>
+qiita
+<a href=https://qiita.com/sahksas/items/e08996327b18df27b27e>GoogleAppsScriptのチートシート - Qiita</a></p><p>  </p><hr><h2 id=使い方>使い方</h2><p>ここから「新規スクリプト」で新たに作成できる。
+<a href=https://script.google.com>https://script.google.com</a></p><p>関数myfunctionがあらかじめ定義されているので、その中に記入していく。
+ 
+ </p><hr><h2 id=基本的な動作>基本的な動作</h2><h3 id=ログの出力>ログの出力</h3><p>まずはHello worldしてみよう。</p><pre tabindex=0><code>function log_test() {
+ Logger.log(&#39;Hello world!&#39;);
+}
+</code></pre><p>Cでいうところのprintf。実行ログに出力される。
+値がいまどうなってるかをここで確認することができる。
+ </p><h3 id=変数宣言>変数宣言</h3><pre tabindex=0><code>var hensu; //var
+let hensu2; //let
+const hensu3 = &#39;こんにちは&#39; //const
+hensu = &#39;Hello&#39;!;
+
+hensu2 = 100;
+Logger.log(hensu);
+Logger.log(hensu2);
+</code></pre><p>基本的にはvarではなくlet使ったほうがいい。
+ 
+変数として利用可能なデータ型は、以下が存在する</p><ul><li>数値型(Number)</li><li>文字列型(String)</li><li>真偽型(Boolean)</li><li>undefind</li><li>null</li><li>配列(Array)</li><li>オブジェクト(Object)</li><li>日時型(Date)</li></ul><p> 
+ </p><p>typeof関数を使用することで、データ型を調べることができる</p><pre tabindex=0><code>typeof(hensu);
+</code></pre><p>変数の定義方式は以下の種類があり、それぞれ違う性質を持つ</p><table><thead><tr><th>定義方式</th><th>定義/変数</th><th>もう一度代入</th><th>再宣言</th><th>スコープ</th></tr></thead><tbody><tr><td>var</td><td>変数を宣言</td><td>可能</td><td>可能</td><td>ローカル</td></tr><tr><td>let</td><td>変数を宣言</td><td>可能</td><td>不可能</td><td>ブロック</td></tr><tr><td>const</td><td>定数を宣言</td><td>不可能</td><td>不可能</td><td>ブロック</td></tr></tbody></table><p> </p><h3 id=配列>配列</h3><pre tabindex=0><code>let array_1 = [&#39;Red&#39;,&#39;Blue&#39;, &#39;Yellow&#39;];
+let array_2 = [10,20,30];
+</code></pre><p>最初の要素が0で、1、２……と増えていく。</p><p> </p><h3 id=文字列の操作>文字列の操作</h3><h4 id=連結>連結</h4><pre tabindex=0><code>let str_1 = &#39;こんにちは。&#39;;
+let str_2 = &#39;私は熊本高専生です。&#39;;
+let str_link = str_1 + str_2;
+Logger.log(str_link); //こんにちは。私は熊本高専生です。
+</code></pre><p>文字を+演算子で結合することができる。</p><p> </p><h4 id=置き換え>置き換え</h4><pre tabindex=0><code>let str_3 = &#39;私はお米が好きです&#39;;
+let str_replace = str_3.replace(&#39;米&#39;, &#39;金&#39;);
+Logger.log(str_replace);
+</code></pre><p>replace()を使用することで、文字列の特定の文字を違う文字に置き換えることができる。</p><p> </p><hr><h2 id=スプレッドシートの操作>スプレッドシートの操作</h2><p>スプレッドシートから操作することもできる
+Google driveからスプレッドシートを新規作成→スプレッドシート操作画面で「拡張機能」を選択→Apps Scriptを選択</p><p> </p><h3 id=スプレッドシートを開く>スプレッドシートを開く</h3><pre tabindex=0><code>const id = &#39;aiueokstnhmyrwn&#39;; //ファイルidを代入
+let file = SpreadsheetApp.openById(id);
+</code></pre><p>ファイルidとは、URLの内部に存在する。以下の部分に存在する。
+<a href=https://docs.google.com/spreadsheets/d/>https://docs.google.com/spreadsheets/d/</a>ファイルid/edit#gid=シートid</p><p> </p><h3 id=シートを開く>シートを開く</h3><pre tabindex=0><code> //名前からシートを開く
+  const sheet_name = &#39;シート1&#39;
+  let sheet1 = file.getSheetByName(sheet_name);
+</code></pre><p>ファイルだけでなくシートを指定する必要がある。ファイルidからgetSheetByName()を使用して名前からシートを開くことができる。シートは下部のバーから追加・変更できる。</p><p> </p><h3 id=セルの値を取得する>セルの値を取得する</h3><pre tabindex=0><code>  //セルの値を取得する
+  let row = 2, //2行目
+      col = 3; //3列目 (C列)
+    
+  //C2のデータを取得
+  let c2_value = sheet1.getRange(row,col).getValue();
+  Logger.log(c2_value);
+</code></pre><p>受け取ったシート内でgetRange()で行と列を指定し、getValue()で値を取得できる。</p><p> </p><pre tabindex=0><code>  //複数の値の取得
+  let row2 = 5, //~5行
+      col2 = 3; //~3列
+ 
+  //C2:E6の値を取得
+  let cell_values = sheet1.getRange(row,col,row2,col2).getValues();
+  Logger.log(cell_values)
+</code></pre><p>複数の値を取得する場合は、getValue()ではなくgetValues()を使用する。
+getRange()に指定する値を増やすことで、複数範囲の値を取得できる。このサンプルコードの場合は2~6行、3~5列の5行3列の値を取得している。</p><p> </p><h3 id=セルの値を設定変更する>セルの値を設定、変更する</h3><pre tabindex=0><code>sheet1.getRange(row,col).setValue(&#39;こんにちは&#39;);
+</code></pre><p>setValueを使用する。複数のセルをまとめて設定することはできない。</p><p> </p><h3 id=ブランク判定>ブランク判定</h3><pre tabindex=0><code>  if (sheet1.getRange(row,col).isBlank() == true) {
+    Logger.log(&#39;ブランクです&#39;);
+  } else {
+    Logger.log(&#39;値が入っています&#39;);
+  }
+</code></pre><p>値が入っているかはisBlank()を使用して判定でき、空白の場合はtrueを返して値が入っている場合はfalseを返す。</p><p> </p><h3 id=最終行最終列を取得>最終行・最終列を取得</h3><pre tabindex=0><code>  //セルに入力のある最後の行・列を取得
+  let lastrow = sheet1.getLastRow(); 
+  let lastcol = sheet1.getLastColumn();
+
+  Logger.log(lastrow);
+  Logger.log(lastcol);
+</code></pre><p>セルに入力してある最大の行もしくは列を取得する。</p><p> </p><h3 id=行の挿入>行の挿入</h3><pre tabindex=0><code> sheet1.insertRowAfter(2) //2行目の後に一行挿入
+ sheet1.insertRowBefore(5) //5行目の前に一行挿入
+ sheet1.insertRowsAfter(10,2) //10行目の後に二行挿入
+ sheet1.insertRowsBefore(15, 3) //15行目の前に三行挿入
+</code></pre><p>RowをColumnに変更することで、列でも同じことができる。（行は英語でRow、列は英語でColumn)</p><p> </p><h3 id=行の削除>行の削除</h3><pre tabindex=0><code>  sheet1.deleteRow(3) //三行目を削除
+  sheet1.deleteRows(20,6) //20行目～25行目を削除
+</code></pre><p>こちらもRowをColumnに変更することで、列でも同じことができる。（行は英語でRow、列は英語でColumn)</p><p> </p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/gas/ rel=tag>GAS</a></li><li class=tags__item><a class="tags__link btn" href=/tags/cheatsheet/ rel=tag>cheatsheet</a></li></ul></div></footer></article></main><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="hayabusa1601 avatar" src=/img/avatar.png class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>About hayabusa1601</span></div><div class=authorbox__description>hello!</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/jul11_fe/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>基本情報技術者試験にギリギリで受かった話</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/posts/feb7_2022to2023/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>去年の振り返りと今年の抱負</p></a></div></nav></div></div><footer class=footer><div class="container footer__container flex"><div class=footer__links><a class=footer__link href=/privacy/>Privacy policy</a></div><div class=footer__copyright>&copy; 2023 hayabusa1601.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script></body></html>

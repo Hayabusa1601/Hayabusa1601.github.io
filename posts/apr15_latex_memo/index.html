@@ -1,0 +1,187 @@
+<!doctype html><html class=no-js lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><title>【LaTeX】個人主観で管理されたコピペ用テンプレート - My New Hugo Site</title>
+<script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta property="og:title" content="【LaTeX】個人主観で管理されたコピペ用テンプレート"><meta property="og:description" content="はじめに こんにちは、ハヤブサです。いかがお過ごしでしょうか。私は来週から地獄のレポート生活が始まります。 私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は面倒くさいから勉強のためにコマンドを忘れたら逐一調べながら"><meta property="og:type" content="article"><meta property="og:url" content="https://hayabusa1601.github.io/posts/apr15_latex_memo/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-04-15T21:52:24+09:00"><meta property="article:modified_time" content="2022-04-15T21:52:24+09:00"><meta itemprop=name content="【LaTeX】個人主観で管理されたコピペ用テンプレート"><meta itemprop=description content="はじめに こんにちは、ハヤブサです。いかがお過ごしでしょうか。私は来週から地獄のレポート生活が始まります。 私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は面倒くさいから勉強のためにコマンドを忘れたら逐一調べながら"><meta itemprop=datePublished content="2022-04-15T21:52:24+09:00"><meta itemprop=dateModified content="2022-04-15T21:52:24+09:00"><meta itemprop=wordCount content="2575"><meta itemprop=keywords content="LaTeX,"><meta name=twitter:card content="summary"><meta name=twitter:title content="【LaTeX】個人主観で管理されたコピペ用テンプレート"><meta name=twitter:description content="はじめに こんにちは、ハヤブサです。いかがお過ごしでしょうか。私は来週から地獄のレポート生活が始まります。 私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は面倒くさいから勉強のためにコマンドを忘れたら逐一調べながら"><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/notosansjp.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title=ハblog rel=home><div class="logo__item logo__text"><div class=logo__title>ハblog</div><div class=logo__tagline>h4yroom</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>ホーム</span></a></li><li class=menu__item><a class=menu__link href=/posts/><span class=menu__text>記事</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>【LaTeX】個人主観で管理されたコピペ用テンプレート</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2022-04-15T21:52:24+09:00>2022-04-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/latex/ rel=category>LaTeX</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#プリアンブル>プリアンブル</a></li><li><a href=#図>図</a><ul><li><a href=#1枚のみ>1枚のみ</a></li><li><a href=#２枚横に並べる>２枚横に並べる</a></li></ul></li><li><a href=#表>表</a><ul><li><a href=#1枚のみ-1>1枚のみ</a></li><li><a href=#2枚横に並べる>2枚横に並べる</a></li></ul></li><li><a href=#ソースコード>ソースコード</a><ul><li><a href=#外部ファイル>外部ファイル</a></li><li><a href=#直書き>直書き</a></li></ul></li><li><a href=#数式>数式</a><ul><li><a href=#記号>記号</a></li><li><a href=#si単位系>SI単位系</a></li><li><a href=#入力>入力</a></li><li><a href=#文章中に入力>文章中に入力</a></li><li><a href=#参考-2>参考</a></li></ul></li><li><a href=#url>URL</a><ul><li><a href=#参考-3>参考</a></li></ul></li></ul><ul><li><a href=#記号付き箇条書き>記号付き箇条書き</a></li><li><a href=#番号付き箇条書き>番号付き箇条書き</a></li><li><a href=#見出し付き箇条書き>見出し付き箇条書き</a></li><li><a href=#参考-4>参考</a></li></ul><ul><li><a href=#参考-5>参考</a></li></ul></nav></div></div><div class="content post__content clearfix"><h1 id=はじめに>はじめに</h1><p>こんにちは、ハヤブサです。いかがお過ごしでしょうか。私は来週から地獄のレポート生活が始まります。</p><p>私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は<del><del>面倒くさいから</del></del>勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。</p><p>現状、テンプレートは私が書いた我が子のようなクソレポとともに、GitHubのPrivateリポジトリで管理しています。GitHubであたらしくPublicリポジトリを作成して、テンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思い、こちらで公開することにしました。私は雰囲気に委ねてTeXを書いているので、アドバイスや改善案等がありましたら、TwitterのDMに連絡お願いします。</p><p>Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。</p><h1 id=目次>目次</h1><ul><li><a href=#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB>はじめに</a></li><li><a href=#%E7%9B%AE%E6%AC%A1>目次</a></li><li><a href=#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88>テンプレート</a><ul><li><a href=#%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB>プリアンブル</a></li><li><a href=#%E5%9B%B3>図</a><ul><li><a href=#1%E6%9E%9A%E3%81%AE%E3%81%BF>1枚のみ</a></li><li><a href=#%EF%BC%92%E6%9E%9A%E6%A8%AA%E3%81%AB%E4%B8%A6%E3%81%B9%E3%82%8B>２枚横に並べる</a></li></ul></li><li><a href=#%E8%A1%A8>表</a><ul><li><a href=#1%E6%9E%9A%E3%81%AE%E3%81%BF-1>1枚のみ</a></li><li><a href=#2%E6%9E%9A%E6%A8%AA%E3%81%AB%E4%B8%A6%E3%81%B9%E3%82%8B>2枚横に並べる</a></li></ul></li><li><a href=#%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89>ソースコード</a><ul><li><a href=#%E5%A4%96%E9%83%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB>外部ファイル</a></li><li><a href=#%E7%9B%B4%E6%9B%B8%E3%81%8D>直書き</a></li></ul></li><li><a href=#%E6%95%B0%E5%BC%8F>数式</a><ul><li><a href=#%E8%A8%98%E5%8F%B7>記号</a><ul><li><a href=#%E5%8F%82%E8%80%83>参考</a></li></ul></li><li><a href=#si%E5%8D%98%E4%BD%8D%E7%B3%BB>SI単位系</a><ul><li><a href=#%E3%83%9E%E3%82%AF%E3%83%AD>マクロ</a></li><li><a href=#%E5%8F%82%E8%80%83-1>参考</a></li></ul></li><li><a href=#%E5%85%A5%E5%8A%9B>入力</a><ul><li><a href=#%E6%B7%BB%E5%AD%97>添字</a></li><li><a href=#%E5%88%86%E6%95%B0>分数</a></li><li><a href=#%E6%A0%B9%E5%8F%B7>根号</a></li></ul></li><li><a href=#%E6%96%87%E7%AB%A0%E4%B8%AD%E3%81%AB%E5%85%A5%E5%8A%9B>文章中に入力</a></li><li><a href=#%E5%8F%82%E8%80%83-2>参考</a></li></ul></li><li><a href=#url>URL</a><ul><li><a href=#%E5%8F%82%E8%80%83-3>参考</a></li></ul></li></ul></li><li><a href=#%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D>箇条書き</a><ul><li><a href=#%E8%A8%98%E5%8F%B7%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D>記号付き箇条書き</a></li><li><a href=#%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D>番号付き箇条書き</a></li><li><a href=#%E8%A6%8B%E5%87%BA%E3%81%97%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D>見出し付き箇条書き</a></li><li><a href=#%E5%8F%82%E8%80%83-4>参考</a></li></ul></li><li><a href=#tikz>Tikz</a><ul><li><a href=#%E5%8F%82%E8%80%83-5>参考</a></li></ul></li><li><a href=#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE>参考文献</a></li><li><a href=#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB>おわりに</a></li></ul><h1 id=テンプレート>テンプレート</h1><p>表はキャプションを上に、図はキャプションを下に記入する。</p><h2 id=プリアンブル>プリアンブル</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\documentclass</span><span style=color:#a6e22e>[a4paper,10pt]</span>{bxjsarticle}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{xltxtra}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{zxjatype}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{here}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%数式環境最強
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{amsmath}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{amssymb}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{booktabs}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{siunitx}<span style=color:#75715e>%SI記号を使うため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{bm}<span style=color:#75715e>%ベクトルを表示するため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{comment}<span style=color:#75715e>%複数行のコメントを使用するため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここからソースコードの設定====================
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{listings} <span style=color:#75715e>% listingを使うため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\renewcommand</span>{<span style=color:#66d9ef>\lstlistingname</span>}{ソースコード}<span style=color:#75715e>%キャプション名を「ソースコード」に変更
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\lstset</span>{
+</span></span><span style=display:flex><span>  language={C},<span style=color:#75715e>%言語の設定
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  basicstyle={<span style=color:#66d9ef>\scriptsize</span>},
+</span></span><span style=display:flex><span>  frame={tb},<span style=color:#75715e>%上下にフレーム
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここまでソースコードの設定====================
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%TeXで回路図、フローチャートを書くため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{tikz}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{circuitikz}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usetikzlibrary</span>{shapes.geometric}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usetikzlibrary</span>{shapes.misc}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{pdfpages}<span style=color:#75715e>%pdfの入力をするため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{url}<span style=color:#75715e>%参考文献のurlを入力するため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\setjamainfont</span><span style=color:#a6e22e>[BoldFont=ipaexm.ttf]</span>{ipaexm.ttf}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\setjasansfont</span><span style=color:#a6e22e>[BoldFont=ipaexg.ttf]</span>{ipaexg.ttf}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{subfigure}<span style=color:#75715e>%図表を横に並べるため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%カウンタの操作をするため
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\makeatletter</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\newcommand</span>{<span style=color:#66d9ef>\figcaption</span>}[1]{<span style=color:#66d9ef>\def\@</span>captype{figure}<span style=color:#66d9ef>\caption</span>{#1}}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\newcommand</span>{<span style=color:#66d9ef>\tblcaption</span>}[1]{<span style=color:#66d9ef>\def\@</span>captype{table}<span style=color:#66d9ef>\caption</span>{#1}}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\makeatother</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここから、段落、箇条書きの番号設定=========
+</span></span></span><span style=display:flex><span><span style=color:#75715e>%enum環境の一段目に「(1),(2),(3)...」と設定
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\renewcommand</span>{<span style=color:#66d9ef>\labelenumi</span>}{(<span style=color:#66d9ef>\arabic</span>{enumi}).}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%subsubsection段落をローマ数字に設定
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\renewcommand</span>{<span style=color:#66d9ef>\thesubsubsection</span>}{(<span style=color:#66d9ef>\roman</span>{subsubsection})}
+</span></span><span style=display:flex><span><span style=color:#75715e>%===========================================
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%tikzの設定=================================
+</span></span></span><span style=display:flex><span><span style=color:#75715e>%端子(両丸の四角形)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>\tikzset</span>{Terminal/.style={rounded rectangle,  draw,  text centered, text width=3cm, minimum height=1.5cm}};
+</span></span><span style=display:flex><span><span style=color:#75715e>%プロセス(長方形)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>\tikzset</span>{Process/.style={rectangle,  draw,  text centered, text width=3cm, minimum height=1.5cm}};
+</span></span><span style=display:flex><span><span style=color:#75715e>%ひし形
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>\tikzset</span>{Decision/.style={diamond,  draw,  text centered, aspect=3,text width=5cm, minimum height=1.5cm}};
+</span></span><span style=display:flex><span><span style=color:#75715e>%使用しないときはコメントアウトしないとエラー吐く
+</span></span></span><span style=display:flex><span><span style=color:#75715e>%=============
+</span></span></span></code></pre></div><hr><h2 id=図>図</h2><h3 id=1枚のみ>1枚のみ</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{figure}[H]
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\includegraphics</span><span style=color:#a6e22e>[width=8cm]</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\caption</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\label</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{figure}
+</span></span></code></pre></div><h3 id=２枚横に並べる>２枚横に並べる</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{figure}[H]
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\begin</span>{tabular}{cc}
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\begin</span>{minipage}{.48<span style=color:#66d9ef>\textwidth</span>}
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\includegraphics</span><span style=color:#a6e22e>[width=8cm]</span>{}
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\caption</span>{}
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\label</span>{}
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\end</span>{minipage}
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>\begin</span>{minipage}{.48<span style=color:#66d9ef>\textwidth</span>}
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\includegraphics</span><span style=color:#a6e22e>[width=8cm]</span>{}
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\caption</span>{}
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>\label</span>{}
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\end</span>{minipage}
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\end</span>{tabular}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{figure}
+</span></span></code></pre></div><hr><h2 id=表>表</h2><p><a href=http://rra.yahansugi.com/scriptapplet/csv2tabular/>csv, Excel表→LaTeX表変換サイト</a></p><p>このサイトつかってエクセルから変換する</p><h3 id=1枚のみ-1>1枚のみ</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{figure}[H]
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{tabular}{ccc}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\hline</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここに表を入力
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\hline</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{tabular}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\caption</span>{ }
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{figure}
+</span></span></code></pre></div><hr><h3 id=2枚横に並べる>2枚横に並べる</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{figure}[H]
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{tabular}{cc}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{minipage}{.45<span style=color:#66d9ef>\textwidth</span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{tabular}{cc}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここに表を入力
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{tabular}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\tblcaption</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{minipage}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\hfill</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{minipage}{.45<span style=color:#66d9ef>\textwidth</span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\centering</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{tabular}{cc}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%ここに表を入力
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{tabular}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\tblcaption</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{minipage}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{tabular}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\caption</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{figure}
+</span></span></code></pre></div><hr><h2 id=ソースコード>ソースコード</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\lstset</span>{}
+</span></span></code></pre></div><p>内の設定を弄れば言語とか文字サイズとかフレームの有無の設定ができる。</p><h3 id=外部ファイル>外部ファイル</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\lstinputlisting</span><span style=color:#a6e22e>[caption=, label,]</span>{}
+</span></span></code></pre></div><h3 id=直書き>直書き</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{lstlisting}[caption=,label]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{lstlisting}
+</span></span></code></pre></div><hr><h2 id=数式>数式</h2><h3 id=記号>記号</h3><p>くっそ多いのでよく使うものだけ</p><table><thead><tr><th>出力</th><th>入力</th></tr></thead><tbody><tr><td>$$\alpha$$</td><td>\alpha</td></tr><tr><td>$$\beta$$</td><td>\beta</td></tr><tr><td>$$\epsilon$$</td><td>\epsilon</td></tr><tr><td>$$\lambda$$</td><td>\lambda</td></tr><tr><td>$$\sum$$</td><td>\sum</td></tr><tr><td>$$\times$$</td><td>\times</td></tr><tr><td>$$\simeq$$</td><td>\simeq</td></tr><tr><td>$$\infty$$</td><td>\infty</td></tr><tr><td>$$\int$$</td><td>\int</td></tr><tr><td>$$\ldots$$</td><td>\ldots</td></tr><tr><td>$$\cdots$$</td><td>\cdots</td></tr></tbody></table><h4 id=参考>参考</h4><p><a href=http://www.ic.daito.ac.jp/~mizutani/tex/special_characters.html>LaTeXの特殊文字・特別記号</a></p><h3 id=si単位系>SI単位系</h3><p>siunitxパッケージを読み込むことで使用できる。</p><p>コマンドは2種類存在し、単位のみの場合は小文字のsiコマンドを、単位と数値をあわせてsiパッケージで表示するときは大文字のSIコマンドを使用する。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\si</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\SI</span>
+</span></span></code></pre></div><h4 id=マクロ>マクロ</h4><p>多すぎ、一部のみメモ。
+\si{}内に記入することで使用できる。
+メートルとかモルとかは普通にアルファベット表記のほうがラクだけどね</p><table><thead><tr><th>コマンド</th><th>単位</th><th>出力</th></tr></thead><tbody><tr><td>\ampere</td><td>アンペア</td><td>$$A$$</td></tr><tr><td>\kelvin</td><td>ケルビン</td><td>$$K$$</td></tr><tr><td>\kilogram</td><td>キログラム</td><td>$$kg$$</td></tr><tr><td>\metre</td><td>メートル</td><td>$$m$$</td></tr><tr><td>\mole</td><td>モル</td><td>$$mol$$</td></tr><tr><td>\degreeCelsius</td><td>セルシウス温度</td><td>℃</td></tr><tr><td>\coulomb</td><td>クーロン</td><td>$$C$$</td></tr><tr><td>\hertz</td><td>ヘルツ</td><td>$$Hz$$</td></tr></tbody></table><h4 id=参考-1>参考</h4><p><a href=https://medemanabu.net/latex/siunitx-macro/>SI単位（国際単位系） - siunitxパッケージのマクロ</a></p><h3 id=入力>入力</h3><p>数式の入力はequation内で入力する。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{equation}
+</span></span><span style=display:flex><span>	f(x) = ax + b
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>\label</span>{}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{equation}
+</span></span></code></pre></div><p>数式番号なしは*を追加する</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{equation*}
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{equation*}
+</span></span></code></pre></div><h4 id=添字>添字</h4><p>わりと直感的に書ける</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#75715e>%上付き文字=========
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span> x^2 
+</span></span><span style=display:flex><span> x^{2}
+</span></span><span style=display:flex><span> x^{<span style=color:#66d9ef>\prime</span>}
+</span></span><span style=display:flex><span> x^{2 + i}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>%下付き文字===========
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span> x_i
+</span></span><span style=display:flex><span> x_{i}
+</span></span><span style=display:flex><span> x_{<span style=color:#66d9ef>\epsilon</span>}
+</span></span><span style=display:flex><span> 
+</span></span></code></pre></div><h4 id=分数>分数</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span> <span style=color:#66d9ef>\frac</span>{1}{2} <span style=color:#75715e>%\frac{分子}{分母}
+</span></span></span></code></pre></div><h4 id=根号>根号</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\sqrt</span>{3}{27} <span style=color:#75715e>%\sqrt{n乗根}{数式}
+</span></span></span></code></pre></div><h3 id=文章中に入力>文章中に入力</h3><p>$と$で囲えば数式入力できる。</p><h3 id=参考-2>参考</h3><p><a href=https://cns-guide.sfc.keio.ac.jp/2001/11/4/1.html#SECTION012411000000000000000>LaTeX/LaTeXによる文書整形の応用/数式を記述する</a></p><hr><h2 id=url>URL</h2><p>URLパッケージを使って\url使おう！！！</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\url</span>{}　<span style=color:#75715e>%{}内にURL入力
+</span></span></span></code></pre></div><h3 id=参考-3>参考</h3><p><a href=https://tm23forest.com/contents/latex-url-paste>LaTeXにURLを貼る時は必ず\url使う</a></p><h1 id=箇条書き>箇条書き</h1><p>箇条書きには3種類ある。</p><h2 id=記号付き箇条書き>記号付き箇条書き</h2><p>itemize環境で行う。アイテムの記述にはitemを使う。</p><p>また、記号を変更することもできる。その場合は\item [記号（文字）]と記述する。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{itemize}
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第一要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第二要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第三要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span><span style=color:#a6e22e>[$P \neq NP$]</span> 第四要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span><span style=color:#a6e22e>[文字もおｋ]</span> 第五要素
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{itemize}
+</span></span></code></pre></div><h2 id=番号付き箇条書き>番号付き箇条書き</h2><p>箇条書きで並べるときに、数字をつける。enumerate環境で行う。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{enumerate}
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第一要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第二要素
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span> 第三要素
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{enumerate}
+</span></span></code></pre></div><h2 id=見出し付き箇条書き>見出し付き箇条書き</h2><p>アイテムごとに見出しをつける。description環境で行う。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{description}
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span><span style=color:#a6e22e>[第一要素]</span> だいいちようそ
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span><span style=color:#a6e22e>[第二要素]</span> だいにようそ
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>\item</span><span style=color:#a6e22e>[第三要素]</span> だいさんようそ
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{description}
+</span></span></code></pre></div><p>プリアンブルにある設定をみるとrenewcommandの一文があるが、これは箇条書きルールを自分で定義している。</p><h2 id=参考-4>参考</h2><p><a href=https://joker.hatenablog.com/entry/20120114/1326488752>enumerate 環境の箇条書きを、括弧付きにしたり英語にしたり</a></p><p><a href=http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php#ITEMIZE>LaTeX 箇条書き</a></p><h1 id=tikz>Tikz</h1><p>ﾜｽﾚﾁｬｯﾀ……！</p><h2 id=参考-5>参考</h2><p><a href=https://molina.jp/blog/tikz%E3%81%A6%E3%83%95%E3%83%AD%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E3%82%92%E6%9B%B8%E3%81%8F/>TikZでフローチャートを書く</a></p><p><a href=https://www.overleaf.com/learn/latex/CircuiTikz_package>CircuiTikz package</a></p><h1 id=参考文献>参考文献</h1><p><a href=https://shiba6v.hatenablog.com/entry/2017/10/26/172825>理系大学生のための超手抜きLaTeXレポート入門</a></p><p><a href=https://qiita.com/Ishotihadus/items/bbbb85f54e6a4e7aaac0#disclaimer>イショティハドゥスにキレられないための LaTeX 論文執筆メソッド</a></p><p><a href=https://qiita.com/suigin/items/10960e516f2d44f6b6de>アカデミックヤクザにキレられないためのLaTeX論文執筆メソッド</a></p><p><a href=https://blog.loliver.net/2020/08/10/latex-tutorial-preamble/>LaTeX 文書作成入門 【プリアンブル編】</a></p><p><a href=http://takuma-art.blogspot.com/2011/07/tex.html>TeXで図表を横並びにする方法</a></p><p><a href=https://cloudlatex.io/projects>Cloud LaTeX</a></p><h1 id=おわりに>おわりに</h1><p>LaTeXでかなりレポートを作成する際のイライラをなくすことができるので、みなさんも早くこちら側に来ることをおすすめします……</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/latex/ rel=tag>LaTeX</a></li></ul></div></footer></article></main><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="hayabusa1601 avatar" src=/img/avatar.png class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>About hayabusa1601</span></div><div class=authorbox__description>hello!</div></div><nav class="pager flex"><div class="pager__item pager__item--next"><a class=pager__link href=/posts/jul11_fe/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>基本情報技術者試験にギリギリで受かった話</p></a></div></nav></div></div><footer class=footer><div class="container footer__container flex"><div class=footer__links><a class=footer__link href=/privacy/>Privacy policy</a></div><div class=footer__copyright>&copy; 2023 hayabusa1601.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script></body></html>
