@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GAS on h4yroom</title><link>https://hayabusa1601.github.io/categories/gas/</link><description>Recent content in GAS on h4yroom</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 10 Jan 2023 22:39:53 +0900</lastBuildDate><atom:link href="https://hayabusa1601.github.io/categories/gas/index.xml" rel="self" type="application/rss+xml"/><item><title>GASの基本メモ</title><link>https://hayabusa1601.github.io/posts/jan10_gas_cheetsheet/</link><pubDate>Tue, 10 Jan 2023 01:39:53 +0900</pubDate><guid>https://hayabusa1601.github.io/posts/jan10_gas_cheetsheet/</guid><description>参考文献 公式リファレンス Reference overview | Apps Script | Google Developers qiita GoogleAppsScriptのチートシート - Qiita 使い方 ここから「新規スクリプト」で新たに作成できる。 https://script.google.com 関数myfunctionがあらかじめ定義されているので、その中に記入していく。 基本的な動作 ログ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GAS on h4yroom</title><link>https://hayabusa1601.github.io/categories/gas/</link><description>Recent content in GAS on h4yroom</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 10 Jan 2023 22:39:53 +0900</lastBuildDate><atom:link href="https://hayabusa1601.github.io/categories/gas/index.xml" rel="self" type="application/rss+xml"/><item><title>GASの基本メモ</title><link>https://hayabusa1601.github.io/posts/jan10_gas_cheetsheet/</link><pubDate>Tue, 10 Jan 2023 01:39:53 +0900</pubDate><guid>https://hayabusa1601.github.io/posts/jan10_gas_cheetsheet/</guid><description>&lt;hr>
+&lt;h2 id="参考文献">参考文献&lt;/h2>
+&lt;p>公式リファレンス
+&lt;a href="https://developers.google.com/apps-script/reference?hl=en">Reference overview  |  Apps Script  |  Google Developers&lt;/a>
+qiita
+&lt;a href="https://qiita.com/sahksas/items/e08996327b18df27b27e">GoogleAppsScriptのチートシート - Qiita&lt;/a>&lt;/p>
+&lt;p>  &lt;/p>
+&lt;hr>
+&lt;h2 id="使い方">使い方&lt;/h2>
+&lt;p>ここから「新規スクリプト」で新たに作成できる。
+&lt;a href="https://script.google.com">https://script.google.com&lt;/a>&lt;/p>
+&lt;p>関数myfunctionがあらかじめ定義されているので、その中に記入していく。
+ 
+ &lt;/p>
+&lt;hr>
+&lt;h2 id="基本的な動作">基本的な動作&lt;/h2>
+&lt;h3 id="ログの出力">ログの出力&lt;/h3>
+&lt;p>まずはHello worldしてみよう。&lt;/p>
+&lt;pre tabindex="0">&lt;code>function log_test() {
+ Logger.log(&amp;#39;Hello world!&amp;#39;);
+}
+&lt;/code>&lt;/pre>&lt;p>Cでいうところのprintf。実行ログに出力される。
+値がいまどうなってるかをここで確認することができる。
+ &lt;/p></description></item></channel></rss>
