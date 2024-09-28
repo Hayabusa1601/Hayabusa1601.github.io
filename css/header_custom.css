@@ -1,0 +1,7 @@
+.post-excerpt h1, .post-excerpt h2, .post-excerpt h3, 
+.post-excerpt h4, .post-excerpt h5, .post-excerpt h6 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}

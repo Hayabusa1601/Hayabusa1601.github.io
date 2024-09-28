@@ -11,14 +11,4 @@ qiita
 &lt;a href="https://script.google.com">https://script.google.com&lt;/a>&lt;/p>
 &lt;p>関数myfunctionがあらかじめ定義されているので、その中に記入していく。
  
- &lt;/p>
-&lt;hr>
-&lt;h2 id="基本的な動作">基本的な動作&lt;/h2>
-&lt;h3 id="ログの出力">ログの出力&lt;/h3>
-&lt;p>まずはHello worldしてみよう。&lt;/p>
-&lt;pre tabindex="0">&lt;code>function log_test() {
- Logger.log(&amp;#39;Hello world!&amp;#39;);
-}
-&lt;/code>&lt;/pre>&lt;p>Cでいうところのprintf。実行ログに出力される。
-値がいまどうなってるかをここで確認することができる。
  &lt;/p></description></item></channel></rss>
