@@ -1,0 +1,31 @@
+/* iframeを使ったレイアウト用スタイル */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; /* 親ページはスクロールさせない */
+}
+
+body {
+  display: flex;
+}
+
+.menu {
+  flex: 0 0 180px; /* メニューの幅を180pxに固定 */
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100vh; /* 高さを画面全体に */
+  overflow-y: auto; /* メニューが長くなったらスクロール */
+}
+
+.content {
+  flex: 1; /* 残りの幅をすべて使う */
+  height: 100vh;
+}
+
+.content iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* iframeの境界線を消す */
+}

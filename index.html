@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ようこそ！私のホームページへ</title>
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="counter.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <h3>メニュー</h3>
+    <ul>
+      <!-- target属性でiframeを指定 -->
+      <li><a href="main.html" target="main_frame">トップ</a></li>
+      <li><a href="#" target="main_frame">日記</a></li>
+      <li><a target="main_frame">BBS(工事中)</a></li>
+      <li><a href="#" target="main_frame">リンク集</a></li>
+    </ul>
+    <hr>
+    <p>あなたは</p>
+    <div class="counter-box">
+      <span id="counter">0</span>
+    </div>
+    <p>人目のお客様です。</p>
+  </nav>
+
+  <main class="content">
+    <iframe src="main.html" name="main_frame"></iframe>
+  </main>
+
+<script>
+  // ページの読み込み時にカウンターを更新
+  window.addEventListener('load', () => {
+    // localStorageから現在のカウント数を取得（なければ0）
+    let count = localStorage.getItem('page_view');
+    
+    // カウントがなければ初期化、あれば数値に変換
+    count = count ? parseInt(count, 10) : 0;
+    
+    // カウントを1増やす
+    count++;
+    
+    // localStorageに新しいカウント数を保存
+    localStorage.setItem('page_view', count);
+    
+    // HTMLのカウンター表示を更新
+    // 桁数を6桁に固定し、足りない分は0で埋める
+    document.getElementById('counter').innerText = count.toString().padStart(6, '0');
+  });
+</script>
+
+</body>
+</html>

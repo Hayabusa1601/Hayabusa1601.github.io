@@ -1,0 +1,55 @@
+/* 2000年代風スタイルシート */
+
+body {
+  background-color: #99ff99; /* 背景はより緑色に */
+  font-family: "MS Pゴシック", "MS PGothic", sans-serif; /* フォントはMS Pゴシック */
+  line-height: 1.5;
+  color: #000000;
+}
+
+a:link {
+  color: #0000ff; /* リンクは青 */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #800080; /* 訪問済みリンクは紫 */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff0000; /* マウスオーバーで赤 */
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  border-left: 5px solid #26893C;
+  padding-left: 5px;
+}
+
+.site-title {
+  color: #006400;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 3px #aaaaaa, -1px -1px 1px #ffffff;
+}
+
+/* 虹色背景グラデーション */
+.rainbow-font {
+  background-image: linear-gradient(to right, 
+    #ff0000, /* 赤 */
+    #ff7f00, /* 橙 */
+    #ffff00, /* 黄 */
+    #00ff00, /* 緑 */
+    #0000ff, /* 青 */
+    #4b0082, /* 藍 */
+    #9400d3  /* 紫 */
+  );
+  font-weight: bold; /* 文字を太くして見やすくする */
+  
+}
+
+
