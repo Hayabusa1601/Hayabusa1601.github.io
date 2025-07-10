@@ -28,4 +28,5 @@ body {
   width: 100%;
   height: 100%;
   border: none; /* iframeの境界線を消す */
+  overflow-y: auto; /* iframe内のコンテンツがはみ出したらスクロール */
 }
