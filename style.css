@@ -23,8 +23,11 @@ a:hover {
 }
 
 h1, h2, h3 {
-  border-left: 5px solid #26893C;
-  padding-left: 5px;
+  background-color: #6495ED; /* 背景色を水色に */
+  color: #ffffff; /* 文字色を白に */
+  padding: 8px; /* 内側の余白 */
+  border-bottom: 2px solid #0000CD; /* 下線を濃い青に */
+  border-left: 8px solid #0000CD; /* 左線を濃い青に */
 }
 
 .site-title {
@@ -50,6 +53,34 @@ h1, h2, h3 {
   );
   font-weight: bold; /* 文字を太くして見やすくする */
   
+}
+
+/* メニューのボタンスタイル */
+.menu a {
+  display: block;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #c0c0c0;
+  border: 2px outset #e0e0e0;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+.menu a:link, .menu a:visited {
+  color: #000000;
+}
+
+.menu a:hover {
+  background-color: #d0d0d0;
+  border-style: inset;
+  color: #000000;
+}
+
+.menu a:active {
+  border-style: inset;
+  background-color: #b0b0b0;
 }
 
 
