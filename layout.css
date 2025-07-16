@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
   height: 100vh; /* 高さを画面全体に */
   overflow-y: auto; /* メニューが長くなったらスクロール */
+  border-right: 5px solid #808080; /* 右側に太い線を追加 */
 }
 
 .content {
