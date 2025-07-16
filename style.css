@@ -83,4 +83,12 @@ h1, h2, h3 {
   background-color: #b0b0b0;
 }
 
+/* プロフィールページ用の中央揃えスタイル */
+.profile-body {
+  text-align: center;
+}
 
+.profile-body table {
+  margin: 0 auto;
+  text-align: left;
+}
