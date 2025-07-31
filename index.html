@@ -4,20 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ようこそ！私のホームページへ</title>
-<link rel="stylesheet" href="layout.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="counter.css">
+<link rel="stylesheet" href="src/layout.css">
+<link rel="stylesheet" href="src/style.css">
+<link rel="stylesheet" href="src/counter.css">
 </head>
 <body>
 
   <nav class="menu">
     <h3>メニュー</h3>
     <!-- target属性でiframeを指定 -->
-    <a href="main.html" target="main_frame">トップ</a><br>
-    <a href="profile.html" target="main_frame">プロフィール</a><br>
-    <a href="https://hayabusa1601.github.io" target="main_frame">ブログ</a><br>
-    <a target="main_frame">BBS(工事中)</a><br>
-    <a href="links.html" target="main_frame">リンク集</a>
+    <ul>
+      <li><a href="src/main.html" target="main_frame">TOP</a></li>
+      <li><a href="src/portfolio.html" target="main_frame">About</a></li>
+      <li><a href="https://hayabusa1601.github.io" target="main_frame">Blog</a></li>
+      <li><a>BBS</a></li>
+      <li><a href="src/links.html" target="main_frame">Links</a></li>
+    </ul>
     <hr>
     <p>あなたは</p>
     <div class="counter-box">
@@ -27,7 +29,7 @@
   </nav>
 
   <main class="content">
-    <iframe src="main.html" name="main_frame"></iframe>
+    <iframe src="/src/main.html" name="main_frame"></iframe>
   </main>
 
 <script>
