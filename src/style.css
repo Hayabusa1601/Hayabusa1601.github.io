@@ -5,7 +5,7 @@ body {
   background-repeat: repeat;
   background-size: 355.5px 115.5px;
   background-color: #99ff99; /* 背景はより緑色に */
-  font-family: "MS Pゴシック", "MS PGothic", sans-serif; /* フォントはMS Pゴシック */
+  font-family: "メイリオ", "Times New Roman", sans-serif; /* フォントはMS Pゴシック */
   line-height: 1.5;
   color: #000000;
 }
