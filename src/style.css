@@ -127,3 +127,8 @@ img[src="/img/avatar.png"]:hover {
   transform: rotate(360deg);
   transition: transform 2s;
 }
+
+body.article-page {
+    background-image: none;
+    background-color: #ffffff;
+}

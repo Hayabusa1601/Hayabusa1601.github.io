@@ -1,0 +1,39 @@
+
+.blog-entry {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.blog-entry-thumbnail {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.blog-entry-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-entry-content {
+    flex: 1;
+}
+
+.blog-entry-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.blog-entry-meta {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.blog-entry-summary {
+    font-size: 1em;
+}
