@@ -144,3 +144,16 @@ body#blog-page {
   background-repeat: repeat;
   background-size: 250px;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img[src*="parrot.gif"]:hover {
+  animation: spin 0.25s linear infinite;
+}
