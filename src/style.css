@@ -132,3 +132,15 @@ body.article-page {
     background-image: none;
     background-color: #ffffff;
 }
+
+body#links-page {
+  background-image: url(/img/links.png);
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+body#blog-page {
+  background-image: url(/img/blog.png);
+  background-repeat: repeat;
+  background-size: 250px;
+}
