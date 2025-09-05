@@ -22,7 +22,7 @@
     <hr>
     <p>あなたは</p>
     <div class="counter-box">
-      <span id="counter">0</span>
+      <span id="counter">準備中</span>
     </div>
     <p>人目のお客様です。</p>
   </nav>
@@ -30,27 +30,6 @@
   <main class="content">
     <iframe src="/src/main.html" name="main_frame"></iframe>
   </main>
-
-<script>
-  // ページの読み込み時にカウンターを更新
-  window.addEventListener('load', () => {
-    // localStorageから現在のカウント数を取得（なければ0）
-    let count = localStorage.getItem('page_view');
-    
-    // カウントがなければ初期化、あれば数値に変換
-    count = count ? parseInt(count, 10) : 0;
-    
-    // カウントを1増やす
-    count++;
-    
-    // localStorageに新しいカウント数を保存
-    localStorage.setItem('page_view', count);
-    
-    // HTMLのカウンター表示を更新
-    // 桁数を6桁に固定し、足りない分は0で埋める
-    document.getElementById('counter').innerText = count.toString().padStart(6, '0');
-  });
-</script>
 
 </body>
 </html>
