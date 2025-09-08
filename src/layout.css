@@ -31,3 +31,23 @@ body {
   border: none; /* iframeの境界線を消す */
   overflow-y: auto; /* iframe内のコンテンツがはみ出したらスクロール */
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        overflow: auto; /* ページ全体のスクロールを許可 */
+    }
+
+    .menu {
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        border-right: none; /* 横の境界線を削除 */
+        border-bottom: 5px solid #808080; /* 下に境界線を追加 */
+    }
+
+    .content {
+        flex: 1 1 auto;
+        height: 100vh; /* コンテンツエリアの高さを確保 */
+    }
+}
