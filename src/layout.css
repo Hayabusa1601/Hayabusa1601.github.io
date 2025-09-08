@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden; /* 親ページはスクロールさせない */
 }
 
 body {
@@ -30,4 +29,46 @@ body {
   height: 100%;
   border: none; /* iframeの境界線を消す */
   overflow-y: auto; /* iframe内のコンテンツがはみ出したらスクロール */
+}
+
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 99;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease;
+  }
+
+  .menu.menu-visible {
+    transform: translateX(0);
+  }
+
+  .content {
+    flex: 1;
+    width: 100%;
+  }
 }
